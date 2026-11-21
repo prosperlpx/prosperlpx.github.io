@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinedu Prosper Uguru | IT Support & Python Developer</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --accent-color: #58a6ff;
+            --terminal-bg: #161b22;
+            --border-color: #30363d;
+            --prompt-color: #3fb950;
+            --font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #79c0ff;
+            text-decoration: underline;
+        }
+
+        .prompt {
+            color: var(--prompt-color);
+            font-weight: bold;
+        }
+
+        .terminal-window {
+            background-color: var(--terminal-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .terminal-header {
+            background-color: #21262d;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        .dot.red { background-color: #ff5f56; }
+        .dot.yellow { background-color: #ffbd2e; }
+        .dot.green { background-color: #27c93f; }
+
+        .terminal-content {
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        li::before {
+            content: "➜";
+            color: var(--prompt-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .project-card {
+            background-color: var(--terminal-bg);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+        .badge-container {
+            margin-top: 10px;
+        }
+
+        .badge {
+            background-color: #21262d;
+            border: 1px solid var(--border-color);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1><span class="prompt">➜</span> Chinedu Prosper Uguru</h1>
+        <p>IT Support Specialist | Python & Linux Enthusiast | Hardware Technician</p>
+        <div class="contact-links">
+            <a href="mailto:prosperlx8@gmail.com">📧 Email</a>
+            <a href="https://github.com/prosperlpx" target="_blank">💻 GitHub</a>
+        </div>
+    </header>
+
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+        </div>
+        <div class="terminal-content">
+            <h2><span class="prompt">➜</span> ~/about_me</h2>
+            <p>I am a versatile IT Support Specialist and self-taught Python developer with hands-on experience in hardware diagnostics, OS installation, and server deployment.</p>
+            <p>I combine strong hardware troubleshooting skills with software development to deliver reliable technical solutions. I also love open-source and believe in building tools that everyone can use, modify, and learn from.</p>
+        </div>
+    </div>
+
+    <h2><span class="prompt">➜</span> ~/skills</h2>
+    <div class="badge-container">
+        <span class="badge">Linux (Ubuntu/Lubuntu)</span>
+        <span class="badge">Windows</span>
+        <span class="badge">macOS</span>
+        <span class="badge">Python</span>
+        <span class="badge">Bash Scripting</span>
+        <span class="badge">Git & GitHub</span>
+        <span class="badge">GitHub Actions (CI/CD)</span>
+        <span class="badge">Vercel</span>
+        <span class="badge">Vim</span>
+        <span class="badge">Hardware Diagnostics</span>
+    </div>
+
+    <h2><span class="prompt">➜</span> ~/projects</h2>
+
+    <div class="project-card">
+        <h3>Trade Lab (Python)</h3>
+        <p>A Python-based market-monitoring system for a VWAP pullback strategy. Features timezone-aware session handling, shared indicators, automated Telegram alerting, and CI/CD via GitHub Actions.</p>
+        <a href="https://github.com/prosperlpx/trade_lab" target="_blank">View Repository →</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Sys_Inv (Python & Bash)</h3>
+        <p>A system inventory tool to automate file tracking and disk usage analysis across Linux environments. Written in both Python and Bash to demonstrate cross-language system automation.</p>
+        <a href="https://github.com/prosperlpx/sys_inv" target="_blank">View Repository →</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Lubuntu to Remember (Bash)</h3>
+        <p>A repository of Bash utilities, Vim configurations, and Linux commands designed to streamline terminal workflows. Features <code>copyfile</code>, a custom Bash script that handles <code>xclip</code> installation across multiple package managers.</p>
+        <a href="https://github.com/prosperlpx/lubuntu_to_remember" target="_blank">View Repository →</a>
+    </div>
+
+    <!-- UPDATED CONFIDENTIAL PROJECT CARD -->
+    <div class="project-card">
+        <h3>Deployment & Technical Support (Contract)</h3>
+        <p><strong>Confidential B2B Web Application</strong></p>
+        <p>Managed the production deployment of a proprietary frontend web application. Configured custom domain DNS records via Namecheap and routed traffic through Vercel. Collaborated with a remote engineering team to integrate the live application into the central GitHub repository.</p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 0.8rem; color: #8b949e;">
+        <p>Built with HTML/CSS. Hosted on GitHub Pages.</p>
+    </footer>
+</div>
+
+</body>
+</html>
